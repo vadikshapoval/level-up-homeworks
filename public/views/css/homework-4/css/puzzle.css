@@ -3,9 +3,11 @@
   font-size: 30px;
   padding: 40px;
 }
+.title {
+    margin-bottom: 20px;
+}
 .puzzle {
     width: 300px;
-    margin-top: 30px;
 }
 .puzzle div {
     margin-right: 5px;
