@@ -20,7 +20,7 @@ a {
   min-height: 100%;
 }
 
-.content {
+.container {
   flex: 1 0 auto;
 }
 
@@ -38,20 +38,21 @@ footer {
 * {
   box-sizing: border-box;
 }
-.content {
+.container {
   padding-top: 80px;
   width: 1170px;
   margin: 0 auto;
   /*font-size: 0;*/
 }
-.content h1 {
+.container h1 {
   font-size: 28px;
   font-weight: bold;
   padding: 15px;
 }
-.container {
+.colomn {
   display: inline-block;
   font-size: 0;
+  width: 33%;
   padding: 10px 5px;
 }
 header {
@@ -67,21 +68,20 @@ header {
 }
 nav a {
   padding-right: 10px;
+  color: #e3e5e8;
 }
 nav a:hover {
   text-decoration: underline;
+  color: white;
 }
 
-/*img {
-  width: 100%;
-}*/
 .preview {
   width: 100%;
 }
 
 .card {
   display: inline-block; 
-  width: 375px;
+  width: 100%;
   font-size: 16px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
@@ -92,6 +92,8 @@ nav a:hover {
   display: block;
   position: absolute;
   padding: 10px;
+  top: 0;
+  left: 0;
 }
 .card-preview {
   padding: 15px;
@@ -121,12 +123,16 @@ nav a:hover {
   text-align: center;
 }
 .pagination {
-  text-align: center;
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
 }
-.pagination a {
-  padding-left: 20px;
+.page {
+  padding-right: 20px;
   text-decoration: underline;
+}
+.page:last-child {
+  padding-right: 0;
 }
 .pagination .active {
   text-decoration: none;

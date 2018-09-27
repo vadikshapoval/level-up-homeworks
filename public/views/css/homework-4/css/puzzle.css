@@ -1,13 +1,16 @@
 
 .container {
-  font-size: 30px;
-  padding: 40px;
+    font-size: 30px;
+    padding: 40px;
+}
+.content {
+    width: 300px;
 }
 .title {
     margin-bottom: 20px;
 }
 .puzzle {
-    width: 300px;
+    width: 100%;
 }
 .puzzle div {
     margin-right: 5px;
