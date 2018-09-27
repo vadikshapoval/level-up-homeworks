@@ -20,7 +20,7 @@ a {
   min-height: 100%;
 }
 
-.container {
+.content {
   flex: 1 0 auto;
 }
 
@@ -38,23 +38,23 @@ footer {
 * {
   box-sizing: border-box;
 }
-.container {
+.content {
   padding-top: 80px;
   width: 1170px;
   margin: 0 auto;
   /*font-size: 0;*/
 }
-.container h1 {
+.content h1 {
   font-size: 28px;
   font-weight: bold;
   padding: 15px;
 }
-.colomn {
+.column {
   display: inline-block;
-  font-size: 0;
   width: 33%;
-  padding: 10px 5px;
-  vertical-align: baseline;
+  padding: 0 5px;
+  margin-bottom: 10px;
+  vertical-align: top;
 }
 header {
   background-color: #3F51B5;
