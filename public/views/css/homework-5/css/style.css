@@ -40,7 +40,9 @@ footer {
 * {
   box-sizing: border-box;
 }
-
+.content {
+  padding-top: 15px;
+}
 .container {
   margin: 0 auto;
   width: 100%;
@@ -65,9 +67,6 @@ footer {
 @media (min-width: 1024px) {
   .container {
     width: 980px;
-  }
-  .row {
-    display: flex;
   }
 }
 @media (min-width: 1280px) {
@@ -233,7 +232,6 @@ footer {
   height: 60px;
   background-color: #04969e;
   color: #fff;
-  margin-bottom: 20px;
   line-height: 60px;
   text-align: center;
 }
@@ -283,12 +281,16 @@ footer {
   top: 50%;
   left: 0;
 }
+input:checked + .checkbox:before {
+  background-color: blue;
+  border: 2px solid blue;
+}
 input:checked + .checkbox:after {
   content: "";
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
   width: 3px;
-  height: 8px;
+  height: 10px;
   position: absolute;
   top: 3px;
   left: 7px;
@@ -302,7 +304,7 @@ input:checked + .checkbox:after {
   background-color: #ddd;
   font-size: 20px;
 }
-.card-image {
+.card__image {
   background-image: url(../img/everest.jpg);
   background-position: center;
   position: relative;
@@ -310,7 +312,7 @@ input:checked + .checkbox:after {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-.card-name {
+.card__title {
   font-size: 20px;
   font-weight: bold;
   color: #fff;
@@ -318,19 +320,19 @@ input:checked + .checkbox:after {
   left: 10px;
   bottom: 20px;
 }
-.card-preview {
+.card__content {
   padding: 15px;
   background-color: white;
 }
-.card-preview__name {
-  color: #aaa;
+.card__name {
+  color: #6d6d6d;
 }
-.card-preview__description {
+.card__description {
   padding: 15px 0;
   line-height: 18px;
   font-size: 16px;
 }
-.card-button {
+.function__button {
   display: inline-block;
   color: #488c32;
   font-size: 16px;
@@ -338,5 +340,5 @@ input:checked + .checkbox:after {
   text-align: center;
   line-height: 30px;
   height: 30px;
-  margin: 0 10px;
+  padding: 0 10px;
 }
